@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %} Home {% endblock title %}
+{% block homeactive %} active {% endblock homeactive %}
+{% block body %}
+<style>
+    body {
+      background-image: url('/static/img/blog2.png.png');
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+      background-size: 100% 100%;
+    }
+    </style>
+
+<!-- <div class="p-3 mb-2 bg-secondary text-white"> -->
+    <div class="container d-flex justify-content-center my-5 btn btn-light " style="background-color: #f3ece7c4;">
+    <div class="jumbotron align-middle ">
+        <h1 class="display-4 "><b>Welcome to iCoder!</b></h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
+            featured content or information.</p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <a class="btn btn-outline-dark " href="/blog" role="button">Go to Blog</a>
+    </div>
+    </div>
+<!-- </div> -->
+
+
+{% endblock body %}
